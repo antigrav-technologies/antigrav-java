@@ -17,7 +17,9 @@ class Encoder {
         boolean allowNaN,
         boolean forceSave
     ) {
-        return "throw new говно();";
+        StringBuilder builder = new StringBuilder("throw new говно();");
+        //Function<String, String> stringEncoder = ensureASCII ? encodeStringASCII : encodeString;
+        return builder.toString();
     }
 }
 
